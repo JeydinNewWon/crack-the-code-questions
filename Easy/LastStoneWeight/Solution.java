@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 class Solution {
     public int lastStoneWeight(int[] stones) {
-        PriorityQueue<Integer> maxHeap = new PriorityQueue();
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>();
         for (int stone : stones) maxHeap.add(-stone);
 
         while (maxHeap.size() > 1) {
